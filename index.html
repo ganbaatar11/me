@@ -3,12 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ganbaatar Arslanbaatar — Software Engineer</title>
+<title>Ganbaatar Arslanbaatar — Full-Stack Engineer</title>
 <meta name="description" content="Full-stack engineer with 10 years of experience building scalable web applications and AI-driven solutions.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1789167250">
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <nav id="navbar">
   <div class="nav-inner">
@@ -18,31 +22,45 @@
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Contact</a>
     </div>
   </div>
 </nav>
 
 <header id="top" class="hero">
-  <div class="hero-content reveal">
-    <p class="eyebrow">Senior Software Engineer · Salesforce</p>
-    <h1>Ganbaatar<br>Arslanbaatar</h1>
-    <p class="hero-sub">Full-stack engineer with 10 years of experience translating business requirements into scalable, innovative solutions — from generative AI products to high-performance systems.</p>
-    <div class="hero-cta">
+  <div class="blob-field" aria-hidden="true">
+    <span class="blob blob-a"></span>
+    <span class="blob blob-b"></span>
+    <span class="blob blob-c"></span>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow reveal">Full-stack Engineer · Salesforce</p>
+    <h1 class="reveal">
+      Building <span class="grad-text">scalable software</span><br>for 10 years.
+    </h1>
+    <p class="hero-sub reveal">
+      I'm Ganbaatar — an engineer who turns business requirements into end-to-end systems:
+      resilient services, clean data models, and the UI that ties them together.
+    </p>
+    <div class="hero-cta reveal">
       <a href="#experience" class="btn btn-primary">View my work</a>
-      <a href="Ganbaatar-Arslanbaatar-Resume.pdf" download class="btn btn-secondary">Download résumé</a>
+      <a href="Ganbaatar-GB-Resume.pdf" download class="btn btn-secondary">Download résumé</a>
       <a href="#contact" class="btn btn-secondary">Get in touch</a>
     </div>
   </div>
-  <div class="hero-glow"></div>
+
+  <a href="#main" class="scroll-cue reveal" aria-label="Scroll to content">
+    <span></span>
+  </a>
 </header>
 
-<main>
+<main id="main">
 
   <section id="about" class="section">
-    <div class="section-inner reveal">
-      <h2>About</h2>
-      <p class="lead">
+    <div class="section-inner">
+      <p class="eyebrow-sm reveal">About</p>
+      <p class="lead reveal">
         Experienced in end-to-end system design and development — scalable web applications,
         reusable UI components, database design and modeling, scheduled and background processing,
         and comprehensive testing. Currently building generative AI experiences inside Salesforce's CRM platform.
@@ -52,56 +70,48 @@
 
   <section id="experience" class="section alt">
     <div class="section-inner">
-      <h2 class="reveal">Experience</h2>
+      <p class="eyebrow-sm reveal">Experience</p>
+      <h2 class="reveal">Where I've shipped things</h2>
 
-      <div class="timeline">
+      <div class="exp-list">
 
-        <div class="timeline-item reveal">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="card-header">
-              <h3>Senior Software Engineer</h3>
-              <span class="card-date">May 2021 — Present</span>
-            </div>
-            <p class="card-company">Salesforce · San Francisco, California</p>
-            <ul>
-              <li><strong>Sales Account Research</strong> — Designed and built an end-to-end generative AI solution that orchestrates web-based company research, prompt-driven insight generation with source citations, and seamless updates to Account and Account Plan fields.</li>
-              <li><strong>Einstein Summary</strong> — Developed the beta of an AI-powered CRM record summarization feature for Account, Opportunity, Contact, and Lead records, later onboarding it to the Einstein platform framework for greater customization, extensibility, and enterprise-grade security.</li>
-              <li>Implemented a virtual entity solution to optimize Salesforce's Your Account application, improving performance by <strong>over 90%</strong> for subscription management and license purchasing operations.</li>
-              <li>Designed and built a configurable digital credential verification service — initially validating Smart Health Cards and lab results, later evolving into a general-purpose credential verification platform. Named inventor on <strong>U.S. Patent US12399963B2</strong>.</li>
-            </ul>
+        <article class="exp-card reveal" style="--accent-color: var(--blue);">
+          <div class="exp-card-top">
+            <h3>Senior Software Engineer</h3>
+            <span class="tag">May 2021 — Present</span>
           </div>
-        </div>
+          <p class="exp-company">Salesforce · San Francisco, California</p>
+          <ul>
+            <li><strong>Sales Account Research</strong> — Designed and built an end-to-end generative AI solution that orchestrates web-based company research, prompt-driven insight generation with source citations, and seamless updates to Account and Account Plan fields.</li>
+            <li><strong>Einstein Summary</strong> — Developed the beta of an AI-powered CRM record summarization feature for Account, Opportunity, Contact, and Lead records, later onboarding it to the Einstein platform framework for greater customization, extensibility, and enterprise-grade security.</li>
+            <li>Implemented a virtual entity solution to optimize Salesforce's Your Account application, improving performance by <strong>over 90%</strong> for subscription management and license purchasing operations.</li>
+            <li>Designed and built a configurable digital credential verification service — initially validating Smart Health Cards and lab results, later evolving into a general-purpose credential verification platform. Named inventor on <strong>U.S. Patent US12399963B2</strong>.</li>
+          </ul>
+        </article>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="card-header">
-              <h3>Software Engineer</h3>
-              <span class="card-date">Apr 2018 — May 2021</span>
-            </div>
-            <p class="card-company">Flock IS, Inc. (acquired by Paychex) · San Francisco, California</p>
-            <ul>
-              <li>Built a billing module serving ~1,000 small and medium-sized businesses, generating monthly benefits invoices, reconciliation reports, and retroactive adjustments.</li>
-              <li>Developed a data migration tool that streamlined client onboarding — onboarding 3,000 employees and their families in an average of 20 minutes.</li>
-              <li>Optimized reporting and data compatibility-checking jobs by fine-tuning SQL queries and batch processing, reducing processing time by <strong>40%</strong>.</li>
-            </ul>
+        <article class="exp-card reveal" style="--accent-color: var(--red);">
+          <div class="exp-card-top">
+            <h3>Software Engineer</h3>
+            <span class="tag">Apr 2018 — May 2021</span>
           </div>
-        </div>
+          <p class="exp-company">Flock IS, Inc. (acquired by Paychex) · San Francisco, California</p>
+          <ul>
+            <li>Built a billing module serving ~1,000 small and medium-sized businesses, generating monthly benefits invoices, reconciliation reports, and retroactive adjustments.</li>
+            <li>Developed a data migration tool that streamlined client onboarding — onboarding 3,000 employees and their families in an average of 20 minutes.</li>
+            <li>Optimized reporting and data compatibility-checking jobs by fine-tuning SQL queries and batch processing, reducing processing time by <strong>40%</strong>.</li>
+          </ul>
+        </article>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-marker"></div>
-          <div class="timeline-card">
-            <div class="card-header">
-              <h3>Software Developer</h3>
-              <span class="card-date">Nov 2015 — Apr 2017</span>
-            </div>
-            <p class="card-company">Unimedia Solutions, LLC · Ulaanbaatar, Mongolia</p>
-            <ul>
-              <li>Developed the client-side BPO (task creation) component of a crowdsourcing platform for the Japanese market, connecting clients with users to complete tasks that cannot be performed by computers — <a href="https://crowd-job.com" target="_blank" rel="noopener">crowd-job.com</a>.</li>
-            </ul>
+        <article class="exp-card reveal" style="--accent-color: var(--yellow-deep);">
+          <div class="exp-card-top">
+            <h3>Software Developer</h3>
+            <span class="tag">Nov 2015 — Apr 2017</span>
           </div>
-        </div>
+          <p class="exp-company">Unimedia Solutions, LLC · Ulaanbaatar, Mongolia</p>
+          <ul>
+            <li>Developed the client-side BPO (task creation) component of a crowdsourcing platform for the Japanese market, connecting clients with users to complete tasks that cannot be performed by computers — <a href="https://crowd-job.com" target="_blank" rel="noopener">crowd-job.com</a>.</li>
+          </ul>
+        </article>
 
       </div>
     </div>
@@ -109,37 +119,52 @@
 
   <section id="skills" class="section">
     <div class="section-inner">
-      <h2 class="reveal">Skills</h2>
-      <div class="skills-grid reveal">
-        <div class="skill-card">
-          <h4>Languages</h4>
-          <div class="pills">
-            <span class="pill">Java</span><span class="pill">Ruby</span><span class="pill">JavaScript</span><span class="pill">PHP</span><span class="pill">Apex</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h4>Frameworks</h4>
-          <div class="pills">
-            <span class="pill">Ruby on Rails</span><span class="pill">Sidekiq</span><span class="pill">Laravel</span><span class="pill">Java Spring</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h4>Databases</h4>
-          <div class="pills">
-            <span class="pill">PostgreSQL</span><span class="pill">Redis</span><span class="pill">MySQL</span><span class="pill">SOQL</span><span class="pill">SQL</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h4>Tools</h4>
-          <div class="pills">
-            <span class="pill">Git</span><span class="pill">CircleCI</span><span class="pill">RSpec</span><span class="pill">Vagrant</span><span class="pill">AWS S3</span><span class="pill">Splunk</span><span class="pill">JUnit</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h4>Web</h4>
-          <div class="pills">
-            <span class="pill">LWC</span><span class="pill">Vue.js</span><span class="pill">VueX</span><span class="pill">Backbone.js</span><span class="pill">jQuery</span><span class="pill">AngularJS</span><span class="pill">HTML5 Canvas</span>
-          </div>
+      <p class="eyebrow-sm reveal">Skills</p>
+      <h2 class="reveal">What I build with</h2>
+
+      <div class="chip-row reveal" role="group" aria-label="Filter skills by category">
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="languages" aria-pressed="false">Languages</button>
+        <button type="button" class="chip" data-filter="frameworks" aria-pressed="false">Frameworks</button>
+        <button type="button" class="chip" data-filter="databases" aria-pressed="false">Databases</button>
+        <button type="button" class="chip" data-filter="tools" aria-pressed="false">Tools</button>
+        <button type="button" class="chip" data-filter="web" aria-pressed="false">Web</button>
+      </div>
+
+      <div class="skills-panel reveal">
+        <div class="pills">
+          <span class="pill" data-category="languages" title="Java"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="languages" title="Ruby"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="languages" title="JavaScript"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="languages" title="PHP"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="languages" title="Apex" style="--accent-color: var(--blue);"><span class="pill-icon pill-icon-mono" role="img" aria-label="Apex">Ax</span></span>
+
+          <span class="pill" data-category="frameworks" title="Ruby on Rails"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg" alt="Ruby on Rails" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="frameworks" title="Sidekiq"><img class="pill-icon" src="https://cdn.simpleicons.org/sidekiq" alt="Sidekiq" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="frameworks" title="Laravel"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="frameworks" title="Java Spring"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Java Spring" loading="lazy" width="28" height="28"></span>
+
+          <span class="pill" data-category="databases" title="PostgreSQL"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="databases" title="Redis"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="databases" title="MySQL"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="databases" title="SOQL" style="--accent-color: var(--green);"><span class="pill-icon pill-icon-mono" role="img" aria-label="SOQL">SQ</span></span>
+          <span class="pill" data-category="databases" title="SQL" style="--accent-color: var(--green);"><span class="pill-icon pill-icon-mono" role="img" aria-label="SQL">SQL</span></span>
+
+          <span class="pill" data-category="tools" title="Git"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="tools" title="CircleCI"><img class="pill-icon" src="https://cdn.simpleicons.org/circleci" alt="CircleCI" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="tools" title="RSpec" style="--accent-color: var(--yellow-deep);"><span class="pill-icon pill-icon-mono" role="img" aria-label="RSpec">Rs</span></span>
+          <span class="pill" data-category="tools" title="Vagrant"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vagrant/vagrant-original.svg" alt="Vagrant" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="tools" title="AWS S3"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS S3" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="tools" title="Splunk"><img class="pill-icon" src="https://cdn.simpleicons.org/splunk" alt="Splunk" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="tools" title="JUnit"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-plain.svg" alt="JUnit" loading="lazy" width="28" height="28"></span>
+
+          <span class="pill" data-category="web" title="LWC"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="LWC (Salesforce)" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="web" title="Vue.js"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="web" title="VueX" style="--accent-color: var(--blue);"><span class="pill-icon pill-icon-mono" role="img" aria-label="VueX">Vx</span></span>
+          <span class="pill" data-category="web" title="Backbone.js"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/backbonejs/backbonejs-original.svg" alt="Backbone.js" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="web" title="jQuery"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="web" title="AngularJS"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="AngularJS" loading="lazy" width="28" height="28"></span>
+          <span class="pill" data-category="web" title="HTML5 Canvas"><img class="pill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Canvas" loading="lazy" width="28" height="28"></span>
         </div>
       </div>
     </div>
@@ -147,31 +172,37 @@
 
   <section id="education" class="section alt">
     <div class="section-inner">
-      <h2 class="reveal">Education</h2>
+      <p class="eyebrow-sm reveal">Education</p>
+      <h2 class="reveal">Where it started</h2>
       <div class="edu-grid">
-        <div class="edu-card reveal">
+        <div class="edu-card reveal" style="--accent-color: var(--blue);">
           <h4>M.S. in Computer Science</h4>
-          <p class="card-company">Maharishi University of Management · Fairfield, Iowa</p>
-          <span class="card-date">Apr 2017 — Jun 2019</span>
+          <p class="exp-company">Maharishi University of Management · Fairfield, Iowa</p>
+          <span class="tag">Apr 2017 — Jun 2019</span>
         </div>
-        <div class="edu-card reveal">
+        <div class="edu-card reveal" style="--accent-color: var(--red);">
           <h4>B.S. in Software Engineering</h4>
-          <p class="card-company">Mongolian University of Science and Technology · Ulaanbaatar, Mongolia</p>
-          <span class="card-date">Sep 2011 — Jan 2015</span>
+          <p class="exp-company">Mongolian University of Science and Technology · Ulaanbaatar, Mongolia</p>
+          <span class="tag">Sep 2011 — Jan 2015</span>
         </div>
       </div>
     </div>
   </section>
 
   <section id="contact" class="section contact-section">
+    <div class="blob-field blob-field-small" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+    </div>
     <div class="section-inner reveal">
-      <h2>Let's talk</h2>
+      <p class="eyebrow-sm">Contact</p>
+      <h2>Let's build <span class="grad-text">something great.</span></h2>
       <p class="lead">Open to conversations about engineering, AI products, and interesting problems.</p>
       <div class="contact-links">
         <a href="mailto:ganbaatar.gb@gmail.com" class="btn btn-primary">ganbaatar.gb@gmail.com</a>
         <a href="https://www.linkedin.com/in/ganbaa" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
         <a href="tel:+13124393507" class="btn btn-secondary">(312) 439-3507</a>
-        <a href="Ganbaatar-Arslanbaatar-Resume.pdf" download class="btn btn-secondary">Download résumé</a>
+        <a href="Ganbaatar-GB-Resume.pdf" download class="btn btn-secondary">Download résumé</a>
       </div>
       <p class="location">Mountain View, California</p>
     </div>
@@ -183,6 +214,6 @@
   <p>&copy; 2026 Ganbaatar Arslanbaatar</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=1789167250"></script>
 </body>
 </html>
